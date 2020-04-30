@@ -13,6 +13,10 @@
 
 	<style>
 
+		.div1 {
+			width:75%;
+		}
+
 		.bibbutton {
 		background-color: #4CAF50;
 		border: none;
@@ -24,6 +28,10 @@
 		font-size: 20px;
 		margin: 4px 2px;
 		cursor: pointer;
+		position: absolute;
+		bottom:63;
+		right:0;
+
 
 		position: absolute;
 		bottom:63;
@@ -123,7 +131,20 @@
 		  .bottomright{
 
 		  	position: absolute;
-		  	bottom:63;
+		  	bottom:0;
+		  	right:560;
+		  }
+
+		  .topright{
+
+		  	position: absolute;
+		  	bottom:900;
+		  	right:500;
+		  }
+
+		  .right{
+
+		  	position: absolute;
 		  	right:0;
 		  }
 
@@ -181,7 +202,11 @@
 
 <body>
 
-<div> 
+<div>
+	<embed src="https://en.wikipedia.org/wiki/List_of_World_War_II_battles"  width="500" height="1077.140" class ="right">
+</div>
+
+<div class="div1"> 
 	<div class="dropdown" class="topleft">
 		  <img src="yalta.jpg" alt="Cinque Terre" width="100" height="50">
 		  <div class="dropdown-content">
@@ -191,10 +216,17 @@
 
 	</div>
 
+	<img src="ogmap.png" width="1698.290" height="1077.140" class="center">
+
+    <div class="topright">
+    <embed src="https://www.youtube.com/embed/watch?v=Lm3Bntsp2ck" width="250" height="300">
+    </div>
 
 
-	<img src="yalta.jpg" width="1698.290" height="1077.140" class="center">
-	<a href="https://www.dreamworks.com/movies/shrek" class="bibbutton">To Bibliography</a>
+	<div class ="bottomright">
+	<a href="https://www.dreamworks.com/movies/shrek" class="bibbutton" >To Bibliography</a>
+	</div>
+
 
 
 
@@ -204,7 +236,11 @@
 	</div>
 
 
+
+
 </div>
+
+
 
 	<script>
 		var slider = document.getElementById("myRange");

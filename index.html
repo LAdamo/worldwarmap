@@ -31,8 +31,6 @@
 		position: absolute;
 		bottom:63;
 		right:0;
-
-
 		position: absolute;
 		bottom:63;
 		right:0;
@@ -79,6 +77,7 @@
 		  height: 25px;
 		  background: #4CAF50;
 		  cursor: pointer;
+        }
 
 		 .dropbtn {
 		    background-color: #3498DB;
@@ -200,45 +199,39 @@
 
 
 
-<body>
+    <body>
 
-<div>
-	<embed src="https://en.wikipedia.org/wiki/List_of_World_War_II_battles"  width="500" height="1077.140" class ="right">
-</div>
+        <div>
+            <embed src="https://en.wikipedia.org/wiki/List_of_World_War_II_battles"  width="500" height="1077.140" class ="right">
+        </div>
 
-<div class="div1"> 
-	<div class="dropdown" class="topleft">
-		  <img src="yalta.jpg" alt="Cinque Terre" width="100" height="50">
-		  <div class="dropdown-content">
-		  <img src="yalta.jpg" alt="Cinque Terre" width="300" height="200">
-		  <div class="desc">Stalin, Roosevelt, and Churchill at Yalta</div>
-		  </div>
+        <div class="div1"> 
+            <div class="dropdown" class="topleft">
+                  <img src="yalta.jpg" alt="Cinque Terre" width="100" height="50">
+                  <div class="dropdown-content">
+                      <img src="yalta.jpg" alt="Cinque Terre" width="300" height="200">
+                      <div class="desc">Stalin, Roosevelt, and Churchill at Yalta</div>
+                  </div>
+            </div>
 
-	</div>
+            <img id ="mapImage" src="ogmap.png" width="1698.290" height="1077.140" class="center">
 
-	<img src="ogmap.png" width="1698.290" height="1077.140" class="center">
-
-    <div class="topright">
-    <embed src="https://www.youtube.com/embed/watch?v=Lm3Bntsp2ck" width="250" height="300">
-    </div>
-
-
-	<div class ="bottomright">
-	<a href="https://www.dreamworks.com/movies/shrek" class="bibbutton" >To Bibliography</a>
-	</div>
+            <div class="topright">
+                <embed src="https://www.youtube.com/embed/watch?v=Lm3Bntsp2ck" width="250" height="300">
+            </div>
 
 
+            <div class ="bottomright">
+                <a href="https://www.dreamworks.com/movies/shrek" class="bibbutton" >To Bibliography</a>
+            </div>
 
+            <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <p>Value: <span id="demo"></span></p>
+            </div>
 
-	<div class="slidecontainer">
-		  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-		  <p>Value: <span id="demo"></span></p>
-	</div>
-
-
-
-
-</div>
+        </div> <!-- end div1 -->
+    </body>
 
 
 
@@ -249,8 +242,12 @@
 
 		slider.oninput = function() {
 		  output.innerHTML = this.value;
+		if (output.innerHTML === "12") {
+		  	document.getElementById("mapImage").src = "yalta.jpg"
 		}
 
+        console.log(output.innerHTML)
+        }
 		/* When the user clicks on the button,
 		toggle between hiding and showing the dropdown content */
 		function myFunction() {
@@ -274,11 +271,5 @@
 
 
 	</script>
-
-
-	
-</body>
-
-
 
 </html>

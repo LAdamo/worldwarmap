@@ -68,7 +68,7 @@
 		  appearance: none;
 		  width: 25px;
 		  height: 25px;
-		  background: #4CAF50;
+		  background: #4CAF50;  /*url('image') NEXT Line background-size: 100% 100%; */
 		  cursor: pointer;
 		}
 
@@ -189,6 +189,14 @@
 		  display: block;
 		}
 
+		.sidediv {
+		position: absolute;
+		height: 968px;
+		width: 200px;
+		background-color: powderblue;
+		}
+
+
 		/* Change color of dropdown links on hover */
 		.dropdown-content a:hover {background-color: #ddd}
 
@@ -214,7 +222,18 @@
                   </div>
             </div>
 
+            <div class =sidediv id = "sidebuttons">
+            	<button>B1</button> <button>B1</button> <button>B1</button> <button>B1</button>
+         
+            	
+            
+            </div>
+
+
             <img id ="mapImage" src="ogmap.png" width="1698.290" height="1077.140" class="center">
+
+
+
 
             <div class="topright">
                 <embed src="https://www.youtube.com/embed/watch?v=Lm3Bntsp2ck" width="250" height="300">
@@ -246,20 +265,26 @@
 			if (output.innerHTML === "1") {
 			  	document.getElementById("mapImage").src = "yalta.jpg"
 			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("sidebuttons").innerHTML = "<button>B1</button> <button>B1</button> <button>B1</button> <button>B1</button>"
+
 			}
 			if (output.innerHTML === "2") {
 			  	document.getElementById("mapImage").src = "ogmap.png"
 			  	document.getElementById("dropdownChart").src = "ogmap.png"
+			  	document.getElementById("sidebuttons").innerHTML = "<button>B2</button> <button>B2</button> <button>B2</button> <button>B2</button>"
+
 			}
 
 			if (output.innerHTML === "3") {
 			  	document.getElementById("mapImage").src = "yalta.jpg"
 			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("sidebuttons").innerHTML = "<button>B3</button> <button>B3</button> <button>B3</button> <button>B3</button>"
 			}
 
 			if (output.innerHTML === "4") {
 			  	document.getElementById("mapImage").src = "ogmap.png"
 			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("sidebuttons").innerHTML = "<button>B2</button> <button>B2</button> <button>B3</button> <button>B3</button>"
 			}
 
 			if (output.innerHTML === "5") {

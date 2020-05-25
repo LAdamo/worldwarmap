@@ -191,9 +191,9 @@
 
 		.sidediv {
 		position: absolute;
-		height: 968px;
+		height: 900px;
 		width: 200px;
-		background-color: powderblue;
+		background-color: white;
 		}
 
 
@@ -210,43 +210,32 @@
     <body>
 
         <div>
-            <embed src="https://en.wikipedia.org/wiki/List_of_World_War_II_battles"  width="500" height="1077.140" class ="right">
+            <embed id = "wikibox" src="https://en.wikipedia.org/wiki/List_of_World_War_II_battles"  width="500" height="1077.140" class ="right">
         </div>
 
         <div class="div1"> 
             <div class="dropdown" class="topleft">
-                  <img src="death.png" alt="Cinque Terre" width="50" height="50">
+                  <img id =dDown src="drop1.png" alt="Cinque Terre" width="60" height="40">
                   <div  class="dropdown-content">
-                      <img id ="dropdownChart" src="yalta.jpg" alt="Cinque Terre" width="300" height="200">
-                      <div class="desc">Stalin, Roosevelt, and Churchill at Yalta</div>
+                      <img id ="dropdownChart" src="drop1.png" alt="" width="600" height="400">
+                      <div id =dropdownDesc class="desc">Joint German and Soviet Occupation of Poland</div>
                   </div>
             </div>
 
             <div class =sidediv id = "sidebuttons">
-            	<button>B1</button> <button>B1</button> <button>B1</button> <button>B1</button>
+
          
             	
             
             </div>
 
 
-            <img id ="mapImage" src="ogmap.png" width="1698.290" height="1077.140" class="center">
+            <img id ="mapImage" src="fullmap1.png" width="1698.290" height="1077.140" class="center">
 
-
-
-
-            <div class="topright">
-                <embed src="https://www.youtube.com/embed/watch?v=Lm3Bntsp2ck" width="250" height="300">
-            </div>
-
-
-            <div class ="bottomright">
-                <a href="https://www.dreamworks.com/movies/shrek" class="bibbutton" >To Bibliography</a>
-            </div>
 
             <div class="slidecontainer">
-                  <input type="range" min="1" max="71" value="1" class="slider" id="myRange">
-                  <p>Value: <span id="demo"></span></p>
+                  <input type="range" min="1" max="37" value="1" class="slider" id="myRange">
+                  <p>Biweek: <span id="demo"></span></p>
             </div>
 
         </div> <!-- end div1 -->
@@ -263,369 +252,267 @@
 		  output.innerHTML = this.value;
 
 			if (output.innerHTML === "1") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			  	document.getElementById("sidebuttons").innerHTML = "<button>B1</button> <button>B1</button> <button>B1</button> <button>B1</button>"
+			  	document.getElementById("mapImage").src = "fullmap1.png"
+			  	document.getElementById("dropdownChart").src = "drop.png"
+			  	document.getElementById("dDown").src = "drop.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Joint German and Soviet Occupation of Poland"
 
 			}
+
 			if (output.innerHTML === "2") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "ogmap.png"
-			  	document.getElementById("sidebuttons").innerHTML = "<button>B2</button> <button>B2</button> <button>B2</button> <button>B2</button>"
+			  	document.getElementById("mapImage").src = "fullmap2.png"
+			  	document.getElementById("dropdownChart").src = "drop1.png"
+			  	document.getElementById("dDown").src = "drop1.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The Soviet Union attacks Finland in what would become known as the Winter War "
 
 			}
 
 			if (output.innerHTML === "3") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			  	document.getElementById("sidebuttons").innerHTML = "<button>B3</button> <button>B3</button> <button>B3</button> <button>B3</button>"
+			  	document.getElementById("mapImage").src = "fullmap3.png"
+			  	document.getElementById("dropdownChart").src = "drop2.png"
+			  	document.getElementById("dDown").src = "drop2.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The Soviet offensive in Finland is halted by several Finnish victories; numerous Soviet tanks are destroyed"
 			}
 
 			if (output.innerHTML === "4") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			  	document.getElementById("sidebuttons").innerHTML = "<button>B2</button> <button>B2</button> <button>B3</button> <button>B3</button>"
+			  	document.getElementById("mapImage").src = "fullmap4.png"
+			  	document.getElementById("dropdownChart").src = "drop3.png"
+			  	document.getElementById("dDown").src = "drop3.png"
+			  	document.getElementById("dropdownDesc").innerHTML = " Adolf Hitler directs his generals in planning the invasion of Denmark and Norway."
 			}
 
 			if (output.innerHTML === "5") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap5.png"
+			  	document.getElementById("dropdownChart").src = "drop4.png"
+			  	document.getElementById("dDown").src = "drop4.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The German offensive against the Western front: The invasion of Luxembourg, Belgium, the Netherlands, and France. Churchill gives We shall never surrender, speech to the House of Commons"
 			}
 
 			if (output.innerHTML === "6") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap6.png"
+			  	document.getElementById("dropdownChart").src = "drop5.png"
+			  	document.getElementById("dDown").src = "drop5.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The Battle of Britain begins with Luftwaffe raids on channel shipping."
 			}
 
 			if (output.innerHTML === "7") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap7.png"
+			  	document.getElementById("dropdownChart").src = "drop6.png"
+			  	document.getElementById("dDown").src = "drop6.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Neville Chamberlain resigns from the House of Commons for health reasons; Winston Churchill is elected head of the Conservative Party."
 			}
 
 			if (output.innerHTML === "8") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap8.png"
+			  	document.getElementById("dropdownChart").src = "drop7.png"
+			  	document.getElementById("dDown").src = "drop7.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Romania, Hungary, and Slovak Republics sign Tripartite Pact"
 			}
 
 			if (output.innerHTML === "9") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap9.png"
+			  	document.getElementById("dropdownChart").src = "drop8.png"
+			  	document.getElementById("dDown").src = "drop8.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "US House of Representatives passes the Lend-Lease bill."
 			}
 
 			if (output.innerHTML === "10") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap10.png"
+			  	document.getElementById("dropdownChart").src = "drop9.png"
+			  	document.getElementById("dDown").src = "drop9.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Hitler gives orders for the expansion of Auschwitz prison camp, to be run by Commandant Rudolf Höss."
 			}
 
 			if (output.innerHTML === "11") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap11.png"
+			  	document.getElementById("dropdownChart").src = "drop10.png"
+			  	document.getElementById("dDown").src = "drop10.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Germany invades the Soviet Union with Operation Barbarossa."
 			}
 
 			if (output.innerHTML === "12") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "12") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap12.png"
+			  	document.getElementById("dropdownChart").src = "drop11.png"
+			  	document.getElementById("dDown").src = "drop11.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Franklin D. Roosevelt and Winston Churchill meet at NS Argentia, Newfoundland. The Atlantic Charter is created, signed, and released to the world press."
 			}
 
 			if (output.innerHTML === "13") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap13.png"
+			  	document.getElementById("dropdownChart").src = "drop12.png"
+			  	document.getElementById("dDown").src = "drop12.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "All Jews under German rule must wear the yellow star of David badge with Jew clearly written in it, are forbidden to live with or marry non-Jews, and are forbidden to leave their towns without written consent."
 			}
 
 			if (output.innerHTML === "14") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap14.png"
+			  	document.getElementById("dropdownChart").src = "drop13.png"
+			  	document.getElementById("dDown").src = "drop13.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Japan launches an attack on Pearl Harbor, declares war on the United States and the United Kingdom and invades Thailand and British Malaya and launches aerial attacks against Guam, Hong Kong, the Philippines, Shanghai, Singapore and Wake Island. Canada declares war on Japan. Australia declares war on Japan. Japan invades Burma, Borneo, Hong Kong Island, Gilbert Islands, and Sumatra"
 			}
 
 			if (output.innerHTML === "15") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap15.png"
+			  	document.getElementById("dropdownChart").src = "drop14.png"
+			  	document.getElementById("dDown").src = "drop14.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "baaP"
 			}
 
 			if (output.innerHTML === "16") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap16.png"
+			  	document.getElementById("dropdownChart").src = "drop15.png"
+			  	document.getElementById("dDown").src = "drop15.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "President Franklin D. Roosevelt signed Executive Order 9066 allowing the United States military to define areas as exclusionary zones. These zones affect the Japanese on the West Coast, and Germans and Italians primarily on the East Coast."
 			}
 
 			if (output.innerHTML === "17") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap17.png"
+			  	document.getElementById("dropdownChart").src = "drop16.png"
+			  	document.getElementById("dDown").src = "drop16.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Adolf Hitler issues Directive No. 41, outlining his plans for the coming summer offensive in Russia. The main offensive is directed to seize the Russian oil fields in the Caucasus; a secondary thrust is to capture Stalingrad and protect the flank of the main advance."
 			}
 
 			if (output.innerHTML === "18") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap18.png"
+			  	document.getElementById("dropdownChart").src = "drop17.png"
+			  	document.getElementById("dDown").src = "drop17.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Battle of Coral Sea and Battle of Midway between USA and Japan"
 			}
 
 			if (output.innerHTML === "19") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap19.png"
+			  	document.getElementById("dropdownChart").src = "drop18.png"
+			  	document.getElementById("dDown").src = "drop18.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The U.S. planning team for Operation Torch, which includes George S. Patton; Jimmy Doolittle; Kent Lambert; and Hoyt S. Vandenberg, meets in Washington, D.C. to join the combined planning team from London, England."
 			}
 
 			if (output.innerHTML === "20") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap20.png"
+			  	document.getElementById("dropdownChart").src = "drop19.png"
+			  	document.getElementById("dDown").src = "drop19.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Manhattan Engineering District is formally created, full-effort production of the atomic bomb is begun."
 			}
 
 			if (output.innerHTML === "21") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap21.png"
+			  	document.getElementById("dropdownChart").src = "drop20.png"
+			  	document.getElementById("dDown").src = "drop20.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Operation Torch, the Allied invasion of Vichy-controlled Morocco and Algeria, begins."
 			}
 
 			if (output.innerHTML === "22") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap22.png"
+			  	document.getElementById("dropdownChart").src = "drop21.png"
+			  	document.getElementById("dDown").src = "drop21.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "In the Soviet Union, the Battle of Stalingrad comes to an end with the official surrender of the German 6th Army. The German public is informed of this disaster, marking the first time the Nazi government has acknowledged a failure in the war effort."
 			}
 
 			if (output.innerHTML === "23") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap23.png"
+			  	document.getElementById("dropdownChart").src = "drop22.png"
+			  	document.getElementById("dDown").src = "drop22.png"
+			  	document.getElementById("dropdownDesc").innerHTML ="German forces liquidate the Jewish ghetto in Kraków."
 			}
 
 			if (output.innerHTML === "24") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap24.png"
+			  	document.getElementById("dropdownChart").src = "drop23.png"
+			  	document.getElementById("dDown").src = "drop23.png"
+			  	document.getElementById("dropdownDesc").innerHTML = " Winston Churchill addresses a joint session of the U.S. Congress. He praises the partnership of the two Allies."
 			}
 
 			if (output.innerHTML === "25") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap25.png"
+			  	document.getElementById("dropdownChart").src = "drop24.png"
+			  	document.getElementById("dDown").src = "drop24.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Quebec Conference Between FDR and Churchill"
 			}
 
 			if (output.innerHTML === "26") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap26.png"
+			  	document.getElementById("dropdownChart").src = "drop25.png"
+			  	document.getElementById("dDown").src = "drop25.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "The Third Moscow Conference convened."
 			}
 
 			if (output.innerHTML === "27") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap27.png"
+			  	document.getElementById("dropdownChart").src = "drop26.png"
+			  	document.getElementById("dDown").src = "drop26.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Tehran Conference between FDR, Churchill, and Stalin"
 			}
 
 			if (output.innerHTML === "28") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap28.png"
+			  	document.getElementById("dropdownChart").src = "drop27.png"
+			  	document.getElementById("dDown").src = "drop27.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Diplomats from the USSR and Finland meet to sign an armistice."
 			}
 
 			if (output.innerHTML === "29") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap29.png"
+			  	document.getElementById("dropdownChart").src = "drop28.png"
+			  	document.getElementById("dDown").src = "drop28.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "General Charles de Gaulle takes command of all Free French forces"
 			}
 
 			if (output.innerHTML === "30") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap30.png"
+			  	document.getElementById("dropdownChart").src = "drop29.png"
+			  	document.getElementById("dDown").src = "drop29.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "D-Day begins with the landing of 155,000 Allied troops on the beaches of Normandy in France. The Allied soldiers quickly break through the Atlantic Wall and push inland in the largest amphibious military operation in history."
 			}
 
 			if (output.innerHTML === "31") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap31.png"
+			  	document.getElementById("dropdownChart").src = "drop30.png"
+			  	document.getElementById("dDown").src = "drop30.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "President Roosevelt announces that he will run for an unprecedented fourth term as U.S. President."
 			}
 
 			if (output.innerHTML === "32") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap32.png"
+			  	document.getElementById("dropdownChart").src = "drop31.png"
+			  	document.getElementById("dDown").src = "drop31.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Charles de Gaulle forms the Provisional Government of the French Republic in France."
 			}
 
 			if (output.innerHTML === "33") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap33.png"
+			  	document.getElementById("dropdownChart").src = "drop32.png"
+			  	document.getElementById("dDown").src = "drop32.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Heinrich Himmler orders the crematoriums and gas chambers of Auschwitz II-Birkenau dismantled and blown up."
 			}
 
 			if (output.innerHTML === "34") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap34.png"
+			  	document.getElementById("dropdownChart").src = "drop33.png"
+			  	document.getElementById("dDown").src = "drop33.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Yalta Conference with The Big Three"
 			}
 
 			if (output.innerHTML === "35") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap35.png"
+			  	document.getElementById("dropdownChart").src = "drop34.png"
+			  	document.getElementById("dDown").src = "drop34.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Manila is fully liberated."
 			}
-
 			if (output.innerHTML === "36") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-
+			  	document.getElementById("mapImage").src = "fullmap36.png"
+			  	document.getElementById("dropdownChart").src = "drop35.png"
+			  	document.getElementById("dDown").src = "drop35.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Germany surrenders unconditionally to the Allies at the Western Allied Headquarters in Rheims, France at 2:41 a.m"
 			}
 			if (output.innerHTML === "37") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
+			  	document.getElementById("mapImage").src = "fullmap37.png"
+			  	document.getElementById("dropdownChart").src = "drop36.png"
+			  	document.getElementById("dDown").src = "drop36.png"
+			  	document.getElementById("dropdownDesc").innerHTML = "Little Boy and Fat Man dropped on Hiroshima and Nagasaki. Japan Surrenders."
 			}
 
-			if (output.innerHTML === "38") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
 
-			if (output.innerHTML === "39") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
 
-			if (output.innerHTML === "40") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "41") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "42") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "43") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "44") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "45") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "46") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "47") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "48") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "49") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "50") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "51") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "52") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "53") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "54") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "55") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "56") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "57") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "58") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "59") {
-			  	document.getElementById("mapImage").src = "ogmap.png"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "60") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "61") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "62") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "63") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "64") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "65") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "66") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "67") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "68") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "69") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "70") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
-
-			if (output.innerHTML === "71") {
-			  	document.getElementById("mapImage").src = "yalta.jpg"
-			  	document.getElementById("dropdownChart").src = "yalta.jpg"
-			}
+			
 
         console.log(output.innerHTML)
         }
@@ -633,6 +520,10 @@
 		toggle between hiding and showing the dropdown content */
 		function myFunction() {
 		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		function button1() {
+			document.getElementById("wikibox").src = "https://en.wikipedia.org/wiki/Invasion_of_Poland"
 		}
 
 		// Close the dropdown menu if the user clicks outside of it
